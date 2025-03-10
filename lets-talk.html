@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="../css/styleIndex.css">
+    <link rel="stylesheet" href="../css/styleLets-talk.css">
+</head>
+<body>
+    <header class="header-container">
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li class="list-header"><a href="../index.html"           class="nav-link" aria-label="Go to home">Home</a></li>
+                <li class="list-header"><a href="../page/about-us.html"   class="nav-link" aria-label="Explore our company values and journey together">about us</a></li>
+                <li class="list-header"><a href="../page/services.html"   class="nav-link" aria-label="Explore our services">Services</a></li>
+                <li class="list-header"><a href="../page/gallery.html"    class="nav-link" aria-label="View our gallery">Gallery</a></li>
+                <li class="list-header"><a href="../page/lets-talk.html"  class="nav-link" aria-label="Talk to us or send your feedback">Let's talk</a></li>
+                <li class="list-header"><a href="../page/contact-us.html" class="nav-link" aria-label="Contact us">Career</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+         <form class="form-container" action="/send" method="get" >
+            
+             <h2 class="title">Contact form</h2>
+           <label class="name" for="name">
+              <span class="namef">Name:</span>
+             <input class="size" type="text" id="name" name="name" placeholder="Full name" required minlength="2" maxlength="20" >
+           </label>
+
+           <label class="emailf" for="email">
+              <span class="namef">Email:</span>
+            <input  class="size" type="email" id="email" name="email" placeholder="example@mail.com" required>
+           </label>
+
+           <label class="numberf" for="number">
+              <span class="namef">Number:</span>
+             <input class="size" type="number" id="number" name="number" placeholder="123 4567 890" maxlength="13" required >
+           </label>
+
+           <label class="subject" for="subject">
+             <span class="namef">Subject:</span>
+              <select class="size" name="subject" id="subject" required>
+                <option value="Graphic-Design">Graphic Design</option>
+                <option value="Web-Development">Web Development</option>
+                <option value="Digital-Marketing">Digital Marketing</option>
+              </select>
+           </label>
+
+           <label class="about" for="about">
+             <span class="namef">More about the topic:</span>
+               <textarea class="size" name="about" id="about" rows="4" cols="30" placeholder="Tell us more about what you are looking for" minlength="10" required></textarea>
+           </label>
+
+           <button class="button" type="submit" aria-label="Learn more about our services">Submint now</button>
+         </form>
+    </main>
+
+    <footer class="footer-container">
+      <section class="footer-info">
+        <h2 class="gap">Successful Design</h2>
+        <p>We provide innovative solutions for your business</p>
+      </section>
+
+      <section class="aboutus-footer">
+        <h4 class="gap">About US</h4>
+        <p class="gap">Explore our company values and journey together</p>
+      </section> 
+      <nav class="navbar-footer">
+        <h2 class="gap">Our Links</h2>
+        <ul class="list-container">
+            <li class="list-footer"><a href="../index.html"           class="nav-linkf" aria-label="Go to home">Home</a></li>
+            <li class="list-footer"><a href="../page/about-us.html"   class="nav-linkf" aria-label="Explore our company values and journey together">about us</a></li>
+            <li class="list-footer"><a href="../page/services.html"   class="nav-linkf" aria-label="Explore our services">Services</a></li>
+            <li class="list-footer"><a href="../page/gallery.html" class="nav-linkf" aria-label="View our gallery">Gallery</a></li>
+            <li class="list-footer"><a href="../page/lets-talk.html"  class="nav-linkf" aria-label="Talk to us or send your feedback">Let's talk</a></li>
+            <li class="list-footer"><a href="../page/contact-us.html" class="nav-linkf" aria-label="Contact us">Career</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navbar-services">
+      <h2 class="gap">Our services</h2>
+        <ul class="list-container">
+            <li class="list-footer"><a href="graphic-design.html"    class="nav-linkf" aria-label="Graphic Design Services" >Graphic Design</a></li>
+            <li class="list-footer"><a href="web-development.html"   class="nav-linkf" aria-label="Web Development Services">Web Development</a></li>
+            <li class="list-footer"><a href="digital-marketing.html" class="nav-linkf" aria-label="Digital Marketing Services">Digital Marketing</a></li>
+        </ul>
+    </nav>
+
+      <address class="address">
+        <p class="gap"><span class="gap">Address:</span>123 Main Street, City, Country</p>
+      </address>
+      <address class="email">
+        <p class="gap"><span class="gap">Email:</span><a href="mailto:contact@company.com"  class="decoration">contact@company.com</a></p>
+      </address>
+      <address class="number">
+        <p class="gap"><span class="gap">Number:</span><a href="tel:+1234567890"  class="decoration">+1 (234) 567-890</a></p>
+      </address>
+    <p class="copyrights">&copy; 2025 Successful Design. All rights reserved.</p>
+    </footer>
+</body>
+</html>
