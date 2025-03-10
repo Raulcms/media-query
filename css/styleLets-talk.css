@@ -1,0 +1,106 @@
+body {
+    background-color: #FF5A5F;
+}
+
+.main-container {
+    width: 100%;
+    background-color: #FF5A5F;
+    color: #F0F4F8;
+    padding: 30px 0;
+}
+
+.form-container {
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.3);
+    grid-auto-rows: minmax(100px, auto);
+    align-items: stretch;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "title title" 
+        "name emailf"
+        "numberf subject"
+        "about about"
+        "button button";
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    margin: 0;
+}
+
+.name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.emailf {
+    grid-area: emailf;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.numberf {
+    grid-area: numberf;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subject {
+    grid-area: subject;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button {
+    grid-area: button;
+    width: 40%;
+    justify-self: center;
+}
+
+.namef {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.size {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #F0F4F8;
+    border-radius: 5px;
+    background-color: rgba(11, 11, 12, 0.1);
+    color: #F0F4F8;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.size:valid {
+    border-color: #47be21;
+}
+
+.size:invalid {
+    border-color: #fb040c;
+}
+
+.size:focus {
+    border-color: #F0F4F8;
+}
