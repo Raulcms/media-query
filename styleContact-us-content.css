@@ -1,0 +1,180 @@
+.main-container {
+    background-color: #00B5D4;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 30px 0;
+}
+
+.form-container {
+    width: 60%;
+    height: auto;
+    margin: 5px auto;
+    padding: 20px;
+    display: grid;
+    gap: 8px;
+    border-radius: 5px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.3);
+    grid-auto-rows: minmax(100px, auto);
+    align-items: stretch;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title title"
+    "name last-name"
+    "gender age"
+    "emailf job-area"
+    "grade interest"
+    "school-name school-name"
+    "district country"
+    "city state"
+    "numberf numberf"
+    "type-job type-job"
+    "more-about more-about"
+    "button button";
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+    margin: 0;
+}
+
+.name {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.last-name {
+    grid-area: last-name;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gender {
+    grid-area: gender;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.age {
+    grid-area: age;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.emailf {
+    grid-area: emailf;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.job-area {
+    grid-area: job-area;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.grade {
+    grid-area: grade;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.interest {
+    grid-area: interest;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.school-name {
+    grid-area: school-name;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} 
+
+.district {
+    grid-area: district;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} 
+
+.country{
+    grid-area: country;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.city {
+    grid-area: city;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} 
+
+.state { 
+    grid-area: state;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.numberf {
+    grid-area: numberf;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.type-job {
+    grid-area: type-job;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} 
+
+.more-about {
+    grid-area: more-about;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+ 
+.button {
+    grid-area: button;
+    width: 40%;
+    justify-self: center;
+}
+
+.size {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #00B5D4;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2D3748;
+    font-size: 16px;
+    box-sizing: border-box;   
+}
+
+.size:valid {
+    border-color: #47be21;
+}
+
+.size:invalid {
+    border-color: #fb040c;
+}
+
+.size:focus {
+    border-color: #2670bb !important;
+}

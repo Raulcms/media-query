@@ -1,0 +1,135 @@
+.main-container {
+    width: 100%;
+    background-color: #F0F4F8;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container {
+    width: 50%;
+    background-color: #F0F4F8;
+    color: #333333;
+    padding: 20px;
+    margin: 15px;
+    margin-left: auto;
+}
+
+.title {
+    color: #FF5A5F;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .section-container {
+        width: 90%; 
+        margin: 10px 0;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-footer, .navbar-services {
+        width: 100%;
+        text-align: center;
+    }
+
+    .list-footer, .list-container {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-container {
+        width: 100%;
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    .section-container {
+        width: 70%;
+        margin: 15px auto;
+    }
+
+    .title {
+        font-size: 1.75em;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-footer, .navbar-services {
+        width: 45%;
+        text-align: left;
+    }
+
+    .list-footer, .list-container {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        width: 100%;
+        margin-top: 80px; 
+        padding: 40px;
+    }
+
+    .section-container {
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-footer, .navbar-services {
+        width: 30%;
+        text-align: left;
+    }
+
+    .list-footer, .list-container {
+        padding-left: 10px;
+    }
+}
